@@ -438,7 +438,9 @@ p {
     position: relative;
     z-index: 3;
 }
-
+.btn-custom{
+    background: #59191a;
+}
 .welcome-heading_form{
     margin: 0 auto;
     max-width: 500px;
