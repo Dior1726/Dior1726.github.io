@@ -67,7 +67,7 @@
                         <div class="welcome-heading_form wow fadeInUp" data-wow-delay="0.6s">
                             <form >
                                 <input type="text"  placeholder="Ваше имя" class="form-control mb-4" >
-                                <input name="phone"  placeholder="+7 (000) 000 00 00" class="form-control mb-4" >
+                                <input type="tel"  placeholder="8 (999) 999-9999" id="phone" class="form-control mb-4" >
                                 
                                 <button class="btn btn-custom btn-block">Записатся</button>
                             </form>
@@ -321,7 +321,7 @@
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- mask input -->
-    <!-- <script src="js/jquery.maskedinput.min.js"></script> -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
     <!-- Popper js -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap-4 Beta JS -->
@@ -334,6 +334,11 @@
     <script src="js/footer-reveal.min.js"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+    <script>
+        $(":input").inputmask();
+
+        $("#phone").inputmask({"mask": "8 (999) 999-9999"});
+    </script>
 </body>
 
 </html>
